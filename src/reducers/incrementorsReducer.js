@@ -1,16 +1,18 @@
 import {
-  INCREMENT_DRINK_COFFEE,
-  INCREMENT_EAT_SNACK,
-  INCREMENT_TAKE_NAP,
-  INCREMENT_STUDY
+  INCREMENT_COFFEES,
+  INCREMENT_SNACKS,
+  INCREMENT_NAPS,
+  INCREMENT_STUDIES
 } from '../actions/incrementors';
 
 export default function reducer(state, action){
   switch(action.type){
-    case INCREMENT_DRINK_COFFEE: 
+    case INCREMENT_COFFEES: 
       return { ...state, coffees: state.coffees + 1 };
-    case INCREMENT_EAT_SNACK:
+    case INCREMENT_SNACKS:
       return { ...state, snacks: state.snacks + 1 };
+    case INCREMENT_NAPS:
+      return { ...state, naps: state.naps + 1 };
     default: return state;
   }
 }
