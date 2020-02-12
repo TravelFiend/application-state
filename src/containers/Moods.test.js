@@ -45,7 +45,7 @@ describe('Moods', () => {
     });
 
     it('is sleeping if tired', () => {
-      expect(getFace({ coffees: 4, snacks: 0 })).toEqual('🤮');
+      expect(getFace({ coffees: 0, naps: 0 })).toEqual('😴');
     });
 
     it('is crazy if hyper', () => {
