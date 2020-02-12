@@ -8,8 +8,8 @@ import {
 
 describe('incrementors', () => {
   it('should increment coffees state', () => {
-    const action = incrementCoffees();
     const initialState = { coffees: 4 };
+    const action = incrementCoffees();
 
     const stateNow = reducer(initialState, action);
 
@@ -17,8 +17,8 @@ describe('incrementors', () => {
   });
 
   it('should increment snacks state', () => {
-    const action = incrementSnacks();
     const initialState = { snacks: 7 };
+    const action = incrementSnacks();
 
     const stateNow = reducer(initialState, action);
 
@@ -26,13 +26,20 @@ describe('incrementors', () => {
   });
 
   it('should increment naps state', () => {
-    const action = incrementNaps();
     const initialState = { naps: 3 };
+    const action = incrementNaps();
 
     const stateNow = reducer(initialState, action);
 
     expect(stateNow).toEqual({ naps: 4 });
   });
 
-  it('should increment studies state');
+  it('should increment studies state', () => {
+    const initialState = { studies: 6 };
+    const action = incrementStudies();
+
+    const stateNow = reducer(initialState, action);
+
+    expect(stateNow).toEqual({ studies: 7 });
+  });
 });

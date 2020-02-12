@@ -13,6 +13,8 @@ export default function reducer(state, action){
       return { ...state, snacks: state.snacks + 1 };
     case INCREMENT_NAPS:
       return { ...state, naps: state.naps + 1 };
+    case INCREMENT_STUDIES:
+      return { ...state, studies: state.studies + 1 };
     default: return state;
   }
 }
