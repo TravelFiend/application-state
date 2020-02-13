@@ -1,15 +1,15 @@
 import reducer from './incrementorsReducer';
 import {
-  incrementCoffees,
-  incrementSnacks,
-  incrementNaps,
-  incrementStudies
+  Drink_Coffee,
+  Eat_Snack,
+  Take_Nap,
+  Study
 } from '../actions/incrementors';
 
 describe('incrementors', () => {
   it('should increment coffees state', () => {
     const initialState = { coffees: 4 };
-    const action = incrementCoffees();
+    const action = Drink_Coffee();
 
     const stateNow = reducer(initialState, action);
 
@@ -18,7 +18,7 @@ describe('incrementors', () => {
 
   it('should increment snacks state', () => {
     const initialState = { snacks: 7 };
-    const action = incrementSnacks();
+    const action = Eat_Snack();
 
     const stateNow = reducer(initialState, action);
 
@@ -27,7 +27,7 @@ describe('incrementors', () => {
 
   it('should increment naps state', () => {
     const initialState = { naps: 3 };
-    const action = incrementNaps();
+    const action = Take_Nap();
 
     const stateNow = reducer(initialState, action);
 
@@ -36,7 +36,7 @@ describe('incrementors', () => {
 
   it('should increment studies state', () => {
     const initialState = { studies: 6 };
-    const action = incrementStudies();
+    const action = Study();
 
     const stateNow = reducer(initialState, action);
 
