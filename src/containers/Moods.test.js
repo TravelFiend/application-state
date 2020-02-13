@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Moods, { getFace } from '../selectors/emojiSelectors';
+import Moods from '../selectors/emojiSelectors';
 
 describe('container', () => {
   it('matches a snapshot', () => {

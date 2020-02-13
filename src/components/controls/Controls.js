@@ -4,9 +4,9 @@ import styles from './Controls.css';
 
 const Controls = ({ actions, handleSelection }) => (
   <section className={styles.Controls}>
-    {actions.map(({ name, text, count }) => (
-      <button key={name} onClick={() => handleSelection(name)}>
-        {text || name} {!!count && `- ${count}`}
+    {actions.map((action) => (
+      <button key={action.name} onClick={() => handleSelection(action)}>
+        {action.name}
       </button>
     ))}
   </section>
