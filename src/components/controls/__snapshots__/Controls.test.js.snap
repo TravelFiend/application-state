@@ -5,18 +5,28 @@ exports[`Controls component renders Controls 1`] = `
   className="Controls"
 >
   <button
-    key="DO_STUFF"
+    key="incrementCoffees"
     onClick={[Function]}
   >
-    stuff
-     
+    incrementCoffees
   </button>
   <button
-    key="other"
+    key="incrementSnacks"
     onClick={[Function]}
   >
-    other
-     
+    incrementSnacks
+  </button>
+  <button
+    key="incrementNaps"
+    onClick={[Function]}
+  >
+    incrementNaps
+  </button>
+  <button
+    key="incrementStudies"
+    onClick={[Function]}
+  >
+    incrementStudies
   </button>
 </section>
 `;

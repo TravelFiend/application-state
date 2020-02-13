@@ -13,10 +13,7 @@ const Controls = ({ actions, handleSelection }) => (
 );
 
 Controls.propTypes = {
-  actions: PropTypes.arrayOf(PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    text: PropTypes.string
-  })).isRequired,
+  actions: PropTypes.arrayOf(PropTypes.func.isRequired).isRequired,
   handleSelection: PropTypes.func.isRequired
 };
 

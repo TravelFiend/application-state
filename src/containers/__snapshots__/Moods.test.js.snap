@@ -1,3 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`container matches a snapshot 1`] = `"😀"`;
+exports[`container matches a snapshot 1`] = `
+<Fragment>
+  <Controls
+    actions={
+      Array [
+        [Function],
+        [Function],
+        [Function],
+        [Function],
+      ]
+    }
+    handleSelection={[Function]}
+  />
+  <Face
+    emoji="🤬"
+  />
+</Fragment>
+`;
