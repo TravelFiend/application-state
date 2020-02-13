@@ -32,11 +32,11 @@ describe('actions', () => {
     });
   });
 
-  it('creates an incrementCoffees action', () => {
-    const action = incrementCoffees();
+  it('creates an incrementStudies action', () => {
+    const action = incrementStudies();
 
     expect(action).toEqual({
-      type: INCREMENT_COFFEES
+      type: INCREMENT_STUDIES
     });
   });
 });
