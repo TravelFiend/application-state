@@ -60,10 +60,6 @@
     "url-loader": "^3.0.0",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11",
-<<<<<<< HEAD
     "webpack-dev-server": "^3.11.2"
-=======
-    "webpack-dev-server": "^3.11.0"
->>>>>>> 3ebc54fb69ce6b78d611257051800465e2595de9
   }
 }
